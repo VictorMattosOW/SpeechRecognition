@@ -1,0 +1,76 @@
+body {
+    margin: 0px;
+    background-color: #F4F8FB;
+    font-family: "Goudy Bookletter 1911", sans-serif;
+}
+
+p {
+    color: #DF83FF;
+}
+
+.navbar {
+    margin-top: 1rem;
+    padding: 0rem 3rem 0rem 3rem;
+}
+
+.words {
+    width: 48rem;
+    overflow-y: auto;
+    scroll-behavior: auto;
+    position: sticky;
+}
+
+.caderno {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.caderno-container {
+    padding: 1rem;
+    height: 30rem;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 2px 3px 2px rgb(58, 58, 58);
+}
+
+.botoes-content {
+    margin-top: 30px;
+}
+
+.botoes {
+    width: 6rem;
+    height: 6rem;
+    border: 1px solid #D2EBFF;
+    border-radius: 100px;
+    background-color: #D2EBFF;
+    color: #29415B;
+    border: 1px solid hsla(89, 43%, 51%, 0.3);
+}
+
+
+/* 02070D
+29415B
+D2EBFF
+DBE0E6
+F4F8FB
+FFFFFF */
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.btnDarkTheme {
+    border: none;
+    border-radius: 100px;
+    background-color: #DBE0E6;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
