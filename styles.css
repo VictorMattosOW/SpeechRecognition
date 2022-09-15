@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One:ital@1&family=Dancing+Script&family=Silkscreen&display=swap');
 body {
     margin: 0px;
+    padding: 0px 15rem 0px 15rem;
     background-color: #F4F8FB;
-    font-family: "Goudy Bookletter 1911", sans-serif;
+    font-family: 'Silkscreen', cursive;
 }
 
 p {
@@ -9,7 +11,8 @@ p {
 }
 
 .navbar {
-    margin-top: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
     padding: 0rem 3rem 0rem 3rem;
 }
 

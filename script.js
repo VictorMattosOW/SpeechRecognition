@@ -4,8 +4,9 @@ recognition.lang = 'pt-BR';
 recognition.interimResults = true;
 recognition.continuous = true;
 
-const textoDownload = [];
+let textoDownload = [];
 const btnDark = document.getElementById("darkTheme");
+const darkThemeBaixar = document.getElementById("darkThemeBaixar");
 const bgDark = document.querySelector("body");
 const bgCaderno = document.querySelector(".caderno-container");
 const btnStart = document.querySelector("#btnStart");
@@ -15,6 +16,10 @@ const words = document.querySelector('.words');
 words.appendChild(p);
 
 let darkTheme = false;
+
+darkThemeBaixar.addEventListener('click', () => {
+    escreverArquivo();
+});
 
 btnDark.addEventListener('click', () => {
     if (!darkTheme) {
@@ -45,7 +50,7 @@ btnStart.addEventListener('click', () => {
 });
 
 function escreverArquivo() {
-    let blob = new Blob([textoDownload[textoDownload.length - 1]], { type: "text/plain;charset=utf-8" });
+    let blob = new Blob([textoDownload], { type: "text/plain;charset=utf-8" });
     saveAs(blob, "arquivo" + ".txt");
 }
 
@@ -60,8 +65,12 @@ function start() {
                 texto.push(event.results[i][0].transcript.trim());
                 texto.forEach(t => {
                     pTexto += aplicaPontuacao(t);
-                })
-                p.textContent = pTexto;
+                });
+                // p.textContent = pTexto;
+                // var text = document.getElementById('text');
+                text.value += pTexto;
+                textoDownload = pTexto;
+                console.log(textoDownload);
             }
         }
     }
