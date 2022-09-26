@@ -18,6 +18,8 @@ p {
 
 .words {
     width: 48rem;
+    height: 30rem;
+    border: none;
     overflow-y: auto;
     scroll-behavior: auto;
     position: sticky;
@@ -42,6 +44,10 @@ p {
 }
 
 .botoes-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
     margin-top: 30px;
 }
 
@@ -52,7 +58,19 @@ p {
     border-radius: 100px;
     background-color: #D2EBFF;
     color: #29415B;
-    border: 1px solid hsla(89, 43%, 51%, 0.3);
+    border: 2px solid hsla(268, 43%, 51%, 0.3);
+    cursor: pointer;
+}
+
+.botoes-menores {
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid #D2EBFF;
+    border-radius: 100px;
+    background-color: #D2EBFF;
+    color: #29415B;
+    border: 2px solid hsla(268, 43%, 51%, 0.3);
+    cursor: pointer;
 }
 
 
